@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    form(action="/new", method="post")
+        h1 Add new message
+        input(type="text", name="userName", placeholder="username")
+        input(type="text", name="messageText", placeholder="message text")
+        button(type="submit") Submit
